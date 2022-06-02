@@ -31,7 +31,9 @@
 
 .nav-link-text {
   color: rgb(94, 94, 94);
-  font-size: 30px;
+  font-size: 25px;
+  margin-bottom: 20px;
+  margin-top: 20px;
   }
 
 .nav-link-text:hover {
@@ -39,3 +41,7 @@
 
     font-weight: bold;
 } 
+.heading {
+  color: rgb(28, 160, 180);
+  font-size: 40px;
+}

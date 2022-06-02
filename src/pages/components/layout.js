@@ -8,6 +8,7 @@ import {
   container,
   containerHF,
   full,
+  heading,
 } from "./layout.module.css";
 
 const Layout = ({ pageTitle, children }) => {
@@ -29,7 +30,7 @@ const Layout = ({ pageTitle, children }) => {
         </ul>
       </nav>
       <main className={containerHF}>
-        <h1>{pageTitle}</h1>
+        <h1 className={heading}>{pageTitle}</h1>
         {children}
       </main>
       <article className={container}>
