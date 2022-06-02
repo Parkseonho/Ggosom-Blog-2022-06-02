@@ -1,0 +1,14 @@
+.article_bottom{
+  margin-top: 10px;
+}
+.li_blank{
+  margin-right: 10px;
+  border: 2px solid gray;
+  background-color: rgb(227, 238, 248);
+}
+
+.li_blank:hover{
+  margin-right: 10px;
+  border: 2px solid gray;
+  background-color: gray;
+}

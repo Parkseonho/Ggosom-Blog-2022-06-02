@@ -1,12 +1,12 @@
 import React from "react";
+import Layout from "./components/layout";
 
 const IndexPage = () => {
   return (
-    <main>
-      <title>Home Page</title>
+    <Layout pageTitle="Home">
       <h1>안뇽</h1>
-      <p>ㅋ</p>
-    </main>
+      <p>Link</p>
+    </Layout>
   );
 };
 
