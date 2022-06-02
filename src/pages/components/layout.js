@@ -1,30 +1,38 @@
 import React from "react";
 import { Link } from "gatsby";
-import { liLinkBlank, articleBottom } from "./layout.module.css";
+import {
+  articleBottom,
+  navLinks,
+  navLinkItem,
+  navLinkText,
+  container,
+  containerHF,
+  full,
+} from "./layout.module.css";
 
 const Layout = ({ pageTitle, children }) => {
   return (
-    <div>
+    <div className={full}>
       <title>{pageTitle}</title>
-      <nav>
-        <ul>
-          <li>
-            <Link className={liLinkBlank} to="/">
+      <nav className={container}>
+        <ul className={navLinks}>
+          <li className={navLinkItem}>
+            <Link className={navLinkText} to="/">
               Home Page
             </Link>
           </li>
-          <li>
-            <Link className={liLinkBlank} to="/about">
+          <li className={navLinkItem}>
+            <Link className={navLinkText} to="/about">
               꼬솜이 소개 Page
             </Link>
           </li>
         </ul>
       </nav>
-      <main>
+      <main className={containerHF}>
         <h1>{pageTitle}</h1>
         {children}
       </main>
-      <article>
+      <article className={container}>
         <p className={articleBottom}> Copyright All Rights </p>
       </article>
     </div>

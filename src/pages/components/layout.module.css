@@ -1,14 +1,41 @@
 .article_bottom{
   margin-top: 10px;
 }
-.li_blank{
-  margin-right: 10px;
-  border: 2px solid gray;
-  background-color: rgb(227, 238, 248);
+
+.full{
+  min-height: 100vh;
 }
 
-.li_blank:hover{
-  margin-right: 10px;
-  border: 2px solid gray;
-  background-color: gray;
+.container {
+  margin: auto;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  
 }
+.container-h-f {
+  margin: auto;
+  max-width: 500px;
+
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding-left: 0;
+}
+.nav-link-item {
+  padding-right: 2rem;
+}
+
+.nav-link-text {
+  color: rgb(94, 94, 94);
+  font-size: 30px;
+  }
+
+.nav-link-text:hover {
+    color: rgb(54, 194, 219);
+
+    font-weight: bold;
+} 
