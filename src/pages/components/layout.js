@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "gatsby";
+import { Link, useStaticQuery, graphql } from "gatsby";
 import {
   articleBottom,
   navLinks,
@@ -9,12 +9,27 @@ import {
   containerHF,
   full,
   heading,
+  hTitle,
 } from "./layout.module.css";
 
 const Layout = ({ pageTitle, children }) => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `);
   return (
     <div className={full}>
-      <title>{pageTitle}</title>
+      <title>
+        {pageTitle} | {data.site.siteMetadata.title}
+      </title>
+      <header className={hTitle}>{data.site.siteMetadata.title}</header>
+      <br />
+      <br />
       <nav className={container}>
         <ul className={navLinks}>
           <li className={navLinkItem}>
